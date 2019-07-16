@@ -5,7 +5,7 @@
 Bit vector files are created by the udb2bitvec command. The recommended sequence database is the Greengenes 97% representative set. You should use the `-wordlength 13` option of **makeudb_usearch** to create the udb file, as shown below.
 
 #### Prepare Database
-```
+```bash
 wget "https://github.com/biocore/qiime-default-reference/raw/master/qiime_default_reference/gg_13_8_otus/rep_set/97_otus.fasta.gz"
 
 gunzip 97_otus.fasta.gz
@@ -16,7 +16,7 @@ usearch -udb2bitvec gg97.udb -output gg97.bitvec
 ```
 
 #### Predict 16S from contigs
-```
+```bash
 DB=/path/to/gg97.bitvec
 OUT=$(echo $CONTIGS | rev | cut -f 2- -d . | rev )
 
@@ -45,7 +45,7 @@ ctg1     gene    strand=-        lo=2157196      hi=2158688      len=1493       
 ```
 
 ## Sample script
-```
+```bash
 #!/bin/bash
 DB=$PATH_TO/gg97.bitvec
 usearch=usearch_11
