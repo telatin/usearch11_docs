@@ -1,7 +1,10 @@
 # USEARCH 11 
 
-## List of all commands
+## Sections
+
+ - [USEARCH topics](topics.md)
  
+## List of all commands
 
 #### Sequence alignment commands
 
