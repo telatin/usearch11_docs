@@ -1,8 +1,7 @@
 # USEARCH 11 
 
 ## List of all commands
-
-    - _E.g._ `s`
+ 
 
 #### Sequence alignment commands
 
