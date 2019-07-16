@@ -43,3 +43,31 @@ ctg1     gene    strand=+        lo=4559340      hi=4560834      len=1495       
 ctg1     gene    strand=-        lo=1461497      hi=1462989      len=1493        start=GTTTGATCATGGC/0   end=AGTCGTAACAAGGTAACCGTA/0
 ctg1     gene    strand=-        lo=2157196      hi=2158688      len=1493        start=GTTTGATCATGGC/0   end=AGTCGTAACAAGGTAACCGTA/0
 ```
+
+## Sample script
+```
+#!/bin/bash
+DB=$PATH_TO/gg97.bitvec
+usearch=usearch_11
+
+if [ -e "$1" ]; then
+  CONTIGS=$1
+  if [ "NO$2" == "NO" ]; then
+        OUT=$(readlink -f "$CONTIGS" | rev | cut -f 2-100 -d . | rev)
+  else
+        OUT="$2"
+  fi
+
+  echo "Output fasta: $OUT.16S.fa"
+  echo "Fragments fa: $OUT.16Spart.fa"
+  echo "Tabular file: $OUT.16S.txt"
+  echo "Fasta hits:   $OUT.16S.hits"
+
+  $usearch -search_16s "$CONTIGS" -bitvec "$DB" -fastaout "$OUT.16S.fa" -fragout "$OUT.16Spart.fa" -tabbedout "$OUT.16S.txt" -hitsout "$OUT.16S.hits"
+
+else
+  echo "USAGE: Contigs.fa OutPrefix"
+  echo "Specify contigs file"
+
+fi
+```
