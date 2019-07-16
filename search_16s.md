@@ -53,9 +53,9 @@ usearch=usearch_11
 if [ -e "$1" ]; then
   CONTIGS=$1
   if [ "NO$2" == "NO" ]; then
-        OUT=$(readlink -f "$CONTIGS" | rev | cut -f 2-100 -d . | rev)
+    OUT=$(readlink -f "$CONTIGS" | rev | cut -f 2-100 -d . | rev)
   else
-        OUT="$2"
+    OUT="$2"
   fi
 
   echo "Output fasta: $OUT.16S.fa"
@@ -63,7 +63,8 @@ if [ -e "$1" ]; then
   echo "Tabular file: $OUT.16S.txt"
   echo "Fasta hits:   $OUT.16S.hits"
 
-  $usearch -search_16s "$CONTIGS" -bitvec "$DB" -fastaout "$OUT.16S.fa" -fragout "$OUT.16Spart.fa" -tabbedout "$OUT.16S.txt" -hitsout "$OUT.16S.hits"
+  $usearch -search_16s "$CONTIGS" -bitvec "$DB" -fastaout "$OUT.16S.fa" \
+     -fragout "$OUT.16Spart.fa" -tabbedout "$OUT.16S.txt" -hitsout "$OUT.16S.hits"
 
 else
   echo "USAGE: Contigs.fa OutPrefix"
