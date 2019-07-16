@@ -1,7 +1,8 @@
 # USEARCH 11 
 
 ## List of all commands
- 
+
+    - _E.g._ `s`
 
 #### Sequence alignment commands
 
@@ -105,9 +106,8 @@
 
 #### Miscellaneous commands
  - **search_16s**  Identify 16S sequences in chromosomes or contigs
-   - `usearch -makeudb_usearch gg97.fa -wordlength 13 -output gg97.udb`
-   - `usearch -udb2bitvec gg97.udb -output gg97.bitvec`
-   - ``
+   - `usearch -search_16s contigs.fa -bitvecgg97.bitvec -fastaout 16s.fa`
+   - See [search_16s](search_16s.md) to prepare the database
  - **udb2bitvec**  Create database for search_16s command
 
 #### Commands for OTU analysis and denoising
