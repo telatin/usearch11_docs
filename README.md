@@ -223,7 +223,7 @@
  - **search_phix**  Search for matches to PhiX sequence [[link](https://www.drive5.com/usearch/manual/cmd_search_phix.html)]
  
 #### Sequence database search 
- - **makeudb_sintax**  Make UDB database file for sintax [[link](https://www.drive5.com/usearch/manual/cmd_makeudb_sintax.html)]
+ - :no_entry: **makeudb_sintax**  Make UDB database file for sintax [[link](https://www.drive5.com/usearch/manual/cmd_makeudb_sintax.html)]. See makeudb_usearch instead.
  - **makeudb_ublast**  Make UDB database file for ublast [[link](https://www.drive5.com/usearch/manual/cmd_makeudb_ublast.html)]
  - **makeudb_usearch**  Make UDB database file for usearch_global [[link](https://www.drive5.com/usearch/manual/cmd_makeudb_usearch.html)]
  - **search_exact**  Search for identical sequences [[link](https://www.drive5.com/usearch/manual/cmd_search_exact.html)]
