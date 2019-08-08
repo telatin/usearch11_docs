@@ -72,7 +72,7 @@
 - **fastq_eestats2**  Report number of reads retained at difference length and e.e. cutoffs [[link](https://www.drive5.com/usearch/manual/cmd_fastq_eestats2.html)]
 - **fastq_filter**  Filter reads in FASTQ file by e.e. and other criteria [[link](https://www.drive5.com/usearch/manual/cmd_fastq_filter.html)]
 - **fastq_join**  Concatenate forward (R1) and reverse (R2) paired reads [[link](https://www.drive5.com/usearch/manual/cmd_fastq_join.html)]
-- **fastq_mergepairs**  Assemble (merge) paired reads [[link](https://www.drive5.com/usearch/manual/cmd_fastq_mergepairs.html)]
+- **fastq_mergepairs**  Assemble (merge) paired reads [[options](https://www.drive5.com/usearch/manual/merge_options.html)]  [[description](https://www.drive5.com/usearch/manual/cmd_fastq_mergepairs.html)]
 - **fastq_sra_splitpairs**  Recover paired reads from SRA interleaved or concatenated format [[link](https://www.drive5.com/usearch/manual/cmd_fastq_sra_splitpairs.html)]
  
 #### Commands for sequences in FASTx format (FASTA and FASTQ) 
